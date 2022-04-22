@@ -1,0 +1,267 @@
+/* 首先明确所有import tool */
+
+/* './' 表示same directory */
+
+@import url('./reset.css');
+@import url('./colors.css');
+@import url('./type.css');
+@import url('./grid.css');
+
+
+
+.logo{
+    padding: 20px 20px 0px 20px;
+    margin: 0px auto;
+    display:inline-flex;
+    font-size: 17px;
+    font-weight:800; 
+    color:var(--dark-blue);
+    opacity: 20;
+    text-decoration: underline;
+   
+  
+/* 对其内容 */
+}
+
+nav{
+    background-color: var(--light-blue);
+}
+
+nav ul {
+    padding: 30px 20px 20px 20px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--dark-blue);
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-blue);
+}
+
+p#coldbrew{
+    font-family: 'Poppins', sans-serif;
+    font-size: 8pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 13pt;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+p#coldbrew2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 8pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 13pt;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+
+p#coldbrew3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 8pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 13pt;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+p#map1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 8pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 13pt;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+}
+
+p#map2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 8pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 13pt;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+}
+
+nav li{
+    margin: 10px auto;
+   border-collapse: 1px solid var(--green);
+}
+
+nav a{
+    color: var(--black);
+}
+
+/* media query strategy 依据屏幕尺寸调整界面布局 */
+
+@media (min-width : 768px){
+
+    nav{
+        background-color: var(--dark-blue);
+    }
+    .logo{
+    
+        color:white;
+    }
+    nav a{
+        color: white;
+    }
+
+    h2{
+   
+       color:white;
+    }
+    
+   
+ nav ul{
+     padding:50px 20px 20px 20px;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
+
+ p#map1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 16pt;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+p#map2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 16pt;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    color: white;
+}
+p#coldbrew{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 16pt;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+p#coldbrew2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 17pt;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+
+p#coldbrew3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 17pt;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: white;
+}
+
+p#map1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    text-align:center;
+    letter-spacing: 0.5px;
+    line-height: 17pt;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+}
+
+
+
+@media (min-width : 1024px){
+
+    nav{
+        background-color: rgb(16, 20, 26);
+    }
+
+    nav ul{
+        padding:50px 20px 20px 20px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    h2{
+        text-align: center;
+    }
+    p#map1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 10pt;
+        text-align:center;
+        letter-spacing: 0.5px;
+        line-height: 18pt;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 40px;
+        color:white;
+    
+    }
+    
+    p#map2{
+        font-family: 'Poppins', sans-serif;
+        text-align:center;
+        font-size: 10pt;
+        letter-spacing: 0.5px;
+        line-height: 18pt;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 40px;
+        color:white;
+    }
+
+   }
+

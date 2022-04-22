@@ -1,0 +1,17 @@
+/* 参考“css variables”—— "basic elemnent"等define具体layout */
+
+/* 色盘网： coolors */
+
+:root{
+--bg-pink: #BD9391;
+--light-blue: #AEB9BD;
+--dark-blue:#373F51;
+--yellow:#FED766;
+--green:#4F5D2F;
+--black:#2b2d30;
+--orange:#A04D40;
+--camel: #B4ACA7;
+--dark-red:#49241D;
+
+}
+
