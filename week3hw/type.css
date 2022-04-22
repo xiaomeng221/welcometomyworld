@@ -1,0 +1,11 @@
+/* 字体资源网： google.fonts. */
+
+
+/* google font 切换“import“， 直接复制链接 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Spirax&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}

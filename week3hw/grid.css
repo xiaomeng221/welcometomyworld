@@ -1,0 +1,171 @@
+/* declare container first */
+
+.grid-container{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: (8,1fr);
+}
+
+#gi1 {
+    background-color: var(--bg-pink);
+}
+
+#gi2{
+    background-color: var(white);
+}
+
+#gi3{
+    background-color: var(--light-blue);
+  
+}
+
+#gi4{
+    background-color: var(--bg-pink);
+}
+
+#gi5{
+    background-color: var(--light-blue);
+}
+
+#gi6{
+    background-color: var(--bg-pink);
+}
+
+#gi7{
+    background-color: var(--light-blue);
+}
+
+#gi8{
+    background-color: var(--bg-pink);
+}
+
+/* 设置格子面积 */
+
+
+.grid-item{
+    min-width: 300px;
+    min-height: 400px;
+}
+
+/* 调整ipad layout */
+
+@media (min-width : 768px) {
+    .grid-container{
+        grid-template-columns: 1fr  1fr;
+        grid-template-rows: repeat(4, auto) ;
+
+        /* 宽度设限 ,避免图文过度拉伸*/
+        width: auto;
+        margin: auto;
+    }
+        
+/* 调整颜色 */
+
+#gi1 {
+    background-color: var(--orange);
+}
+
+#gi2 {
+    background-color: var(--camel);
+}
+
+#gi3 {
+    background-color: var(--dark-blue);
+}
+
+#gi4 {
+    background-color: var(--orange);
+
+}
+
+#gi5 {
+    background-color: var(--camel);
+}
+
+#gi6 {
+    background-color: var(--dark-blue);
+}
+
+#gi7 {
+    background-color: var(--orange);
+}
+
+
+
+
+    #gi3{
+        grid-column: span 2;
+    }
+
+    
+/* 规划每个格子所占面积的份额 */
+
+ #gi3{
+     grid-column: span 2;
+ }
+
+ #gi6{
+    grid-column: span 1;
+}
+}
+
+/* 设置laptop版面布局, 宽度优选设置为960px，方便12等分*/
+
+@media (min-width: 1024px){
+
+.grid-container{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto;
+    width: auto;
+    margin: auto;
+}
+
+
+#gi2{
+    grid-column: span 2;
+}
+
+
+#gi3{
+    grid-column: span 3;
+}
+#gi4{
+    grid-column: span 3;
+}
+
+#gi6{
+    grid-column: span 1;
+}
+
+
+/* 调整颜色 */
+
+#gi1 {
+    background-color: var(--dark-red);
+}
+
+#gi2 {
+    background-color: var(--camel);
+}
+
+#gi3 {
+    background-color: rgb(16, 20, 26);
+}
+
+#gi4 {
+    background-color: var(--dark-red);
+
+}
+
+#gi5 {
+    background-color: var(--camel);
+}
+
+#gi6 {
+    background-color: var(--dark-red);
+}
+
+#gi7 {
+    background-color: rgb(16, 20, 26);
+}
+}
