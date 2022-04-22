@@ -1,0 +1,181 @@
+p.dotted#intro {border-style: dotted;
+     border: radius 3px;
+     border-color: cadetblue;
+     padding: 60px 20px 60px 20px;
+     
+}
+
+p.dotted#founds #foundpic {border-style: dotted;
+    border: radius 3px;
+    border-color: cadetblue;
+    padding: 20px 20px 235px 20px;
+    
+}
+
+p.dotted#thinking1 {border-style: dotted;
+    border: radius 3px;
+    border-color: cadetblue;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+
+p.dotted#product {border-style: dotted;
+    border: radius 3px;
+    border-color: cadetblue;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+
+/* div#intro {
+    background-color: rgb(193, 209, 174);
+    padding-top: 50px
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  } */
+
+ body{
+     background-image: url(b5.jpg);
+ }
+
+header{
+    background-color: #c5dbc5;
+    opacity: 50;
+
+}
+
+/* 
+WITHOUT FLEX-(INFLEXIBLE)
+nav ul{
+    margin:0 auto 0 auto;
+    padding:0;
+    width: 210px;;
+} */
+
+nav ul{
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.button {
+    background-color: #4e804f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 3px;
+    cursor: pointer;
+  }
+
+  
+  
+nav li{
+    display:inline-block;
+    margin:15px 20px 15px 20px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgba(158, 52, 52, 0.432);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 15% 30% 50% 50%;
+    gap: 34px;
+    width: 1560px;
+    margin: auto;
+
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 60% 60% 60%;
+    grid-gap: 10px;
+  } */
+
+.grid#logo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+   justify-content: space-evenly;
+   text-align: center;
+}
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(138, 167, 112); opacity: 0;
+    font-style: italic;
+    
+    
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(141, 109, 87);
+    font-size:16pt;
+
+}
+
+p#intro{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    letter-spacing: 0.5px;
+    line-height: 20pt;
+}
+
+
+p#founds{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    letter-spacing: 0.5px;
+    line-height: 16pt;
+}
+
+p#thinking1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    letter-spacing: 0.5px;
+    line-height: 16pt;
+}
+
+
+
+.item-a {
+    grid-area: intro;
+}
+
+.item-b {
+    grid-area: founds;
+}
+
+.item-c {
+    grid-area: thinking1;
+}
+
+.item-d {
+    grid-area: thinking2;
+}
+
+.item-e {
+    grid-area: product;
+}
+
+.contatiner{
+display: grid;
+grid-template-columns: 50px 50px 50px 50px;
+grid-template-rows: auto;
+grid-template-areas: 
+
+    "intro intro . founds founds"
+    "thinking1 . thinking2 thinking2 thinking2"
+    "product product product product"
+}
