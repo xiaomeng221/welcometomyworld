@@ -1,0 +1,60 @@
+
+
+* {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+
+/* 主图 */
+.main{
+    display: block;
+    width:30%;
+    height:90%;
+    padding:10px;
+
+    /* background-color: black; */
+    margin:auto;
+    
+}
+.main li{
+    width: 100%;
+    padding: 10px;
+    margin:auto;
+    box-shadow: 10px 1px 10px 5px rgb(218, 218, 218);
+}
+
+.main img{
+    width:80%;
+    padding:120px 20px 50px 70px;
+}
+
+
+
+/* 小图系列 */
+.thumbs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbs li{
+    width:15%;
+    padding: 5px;
+    margin:1%;
+    box-shadow: 10px 1px 10px 5px rgb(218, 218, 218);
+}
+
+.thumbs li img{
+    width:80%;
+    height:100%;
+}
+
+.thumbs li img:hover{
+    filter: grayscale(100%);
+    transform: scale(2.2) translate(0, 20%);
+}
+
+
+

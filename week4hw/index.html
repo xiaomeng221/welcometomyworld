@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary Gallery</title>
+<style>
+    body{
+        background-image: url("bg.png" );
+    }
+</style>
+
+</head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function thumbChange(num) {
+            var thumb = num + '.png';
+            document.getElementById("mainImg").src = thumb;
+        }
+    </script>
+
+<body>
+    <header>
+        <ul>
+            <li><img src="title.png" width="600" height="450></li>
+        </ul>
+    </header>
+
+    <div class="main">
+        <img id= "mainImg" src="1.png" width="350" height="430">
+    </div>
+
+    <ul class="thumbs">
+      
+        <li onclick="thumbChange(1)"><img src="1.png" width="350" height="430"></li>
+        <li onclick="thumbChange(2)"> <img src="2.png" width="350" height="450"></li>
+        <li onclick="thumbChange(3)"> <img src="3.png" width="350" height="450"></li>
+        <li onclick="thumbChange(4)"> <img src="4.png" width="350" height="450"></li>
+        <li onclick="thumbChange(5)"> <img src="5.png" width="250" height="300"></li>
+    </ul>
+</body>
+</html>
